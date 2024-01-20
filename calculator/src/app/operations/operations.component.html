@@ -1,0 +1,29 @@
+<div class="calculator">
+    <div class="display">
+      <input type="text" [(ngModel)]="displayValue" id="input" disabled />
+    </div>
+    <div class="buttons">
+      <button value="AC" (click)="onClearButtonClick()" id="clear" class="operation-button" >AC</button>
+      <button value="DEL" (click)="onEraseButtonClick()" id="erase" class="operation-button" >DEL</button>
+      <button (click)="onButtonClick('/')" class="operation-button button">/</button>
+      <button (click)="onButtonClick('*')" class="operation-button button" >*</button>
+      <button (click)="onButtonClick('7')" class="digit-button button">7</button>
+      <button (click)="onButtonClick('8')" class="digit-button button">8</button>
+      <button (click)="onButtonClick('9')" class="digit-button button">9</button>
+      <button (click)="onButtonClick('-')" class="operation-button button">-</button>
+      <button (click)="onButtonClick('6')" class="digit-button button">6</button>
+      <button (click)="onButtonClick('5')" class="digit-button button">5</button>
+      <button (click)="onButtonClick('4')" class="digit-button button">4</button>
+      <button (click)="onButtonClick('+')" class="operation-button button">+</button>
+      <button (click)="onButtonClick('1')" class="digit-button button">1</button>
+      <button (click)="onButtonClick('2')" class="digit-button button">2</button>
+      <button (click)="onButtonClick('3')" class="digit-button button">3</button>
+      <button value="=" (click)="onEqualButtonClick()" id="equal" class="operation-button">=</button>
+      <button value="0" (click)="onButtonClick('0')" class="digit-button button" id="zero">0</button>
+      <button value="." (click)="onButtonClick('.')" class="digit-button button">.</button>
+    </div>
+    <div class="main" >
+        <button class="history-button" [routerLink]="'/Calculator/History'">History</button>
+    </div>
+  </div>
+
